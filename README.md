@@ -26,70 +26,49 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 
     - **nome**: Nome da tarefa (string).
     - **descricao**: Descrição da tarefa (string).
-    - **status**: Status da tarefa, como "pendente" ou "completo" (string).
+    - **status**: Status da tarefa (string).
 
-3. Atualizar uma tarefa existente
-Rota: POST /tarefas/{id}
+### 3. **Atualizar uma tarefa existente**
 
-Descrição: Atualiza as informações de uma tarefa existente.
+- **Rota**: `POST /tarefas/{id}`
+- **Descrição**: Atualiza as informações de uma tarefa existente.
+- **Parâmetros**:
 
-Parâmetros:
+    - **id**: O ID da tarefa que você deseja atualizar.
 
-id: O ID da tarefa que você deseja atualizar.
-Campos obrigatórios:
-nome: Nome da tarefa (string).
-descricao: Descrição da tarefa (string).
-status: Novo status da tarefa (string).
+- **Campos obrigatórios**:
 
-4. Excluir uma tarefa
-Rota: DELETE /tarefas/{id}
+    - **nome**: Nome da tarefa (string).
+    - **descricao**: Descrição da tarefa (string).
+    - **status**: Status da tarefa (string).
 
-Descrição: Exclui uma tarefa existente.
+### 4. **Excluir uma tarefa**
 
-Parâmetros:
+- **Rota**: `DELETE /tarefas/{id}`
+- **Descrição**: Exclui uma tarefa existente.
+- **Parâmetros**:
 
-id: O ID da tarefa a ser excluída.
+    - **id**: O ID da tarefa a ser excluída.
 
 
-Como rodar o projeto
-Clone o repositório:
+## Como rodar o projeto
 
-bash
-Copiar código
-git clone https://github.com/seuusuario/seu-repositorio.git
-Entre na pasta do projeto:
+- **Clone o repositório**: `https://github.com/jdbilia/tarefa_api.git`
 
-bash
-Copiar código
-cd seu-repositorio
-Instale as dependências do Laravel:
+- **Entre na pasta do projeto**: `cd tarefa_api`
 
-bash
-Copiar código
-composer install
-Crie o arquivo .env a partir do .env.example:
+- **Instale as dependências do Laravel**: `composer install`
 
-bash
-Copiar código
-cp .env.example .env
-Gere a chave de aplicação do Laravel:
+- **Crie o arquivo .env a partir do .env.example**: `cp .env.example .env`
 
-bash
-Copiar código
-php artisan key:generate
-Rode as migrações para criar o banco de dados:
+- **Gere a chave de aplicação do Laravel**: `php artisan key:generate`
 
-bash
-Copiar código
-php artisan migrate
-Inicie o servidor local:
+- **Rode as migrações para criar o banco de dados**: `php artisan migrate`
 
-bash
-Copiar código
-php artisan serve
-Acesse a API na URL: http://localhost:8000
+- **Inicie o servidor local**: `php artisan serve`
 
-## About Laravel
+- **Acesse a API na URL**: `http://localhost:8000`
+
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
