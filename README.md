@@ -24,9 +24,9 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 - **Descrição**: Cria uma nova tarefa.
 - **Campos obrigatórios**:
 
-    - **nome**: Nome da tarefa (string).
+    - **titulo**: Nome da tarefa (string), limite de 100 caracteres.
     - **descricao**: Descrição da tarefa (string).
-    - **status**: Status da tarefa (string).
+    - **status**: Status da tarefa (string), limite de 20 caracteres.
 
 ### 3. **Atualizar uma tarefa existente**
 
@@ -38,9 +38,9 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 
 - **Campos obrigatórios**:
 
-    - **nome**: Nome da tarefa (string).
+    - **titulo**: Nome da tarefa (string), limite de 100 caracteres.
     - **descricao**: Descrição da tarefa (string).
-    - **status**: Status da tarefa (string).
+    - **status**: Status da tarefa (string), limite de 20 caracteres.
 
 ### 4. **Excluir uma tarefa**
 
@@ -52,6 +52,7 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 
 
 ## Como rodar o projeto
+
 
 - **Clone o repositório**: `https://github.com/jdbilia/tarefa_api.git`
 
@@ -68,6 +69,9 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 - **Inicie o servidor local**: `php artisan serve`
 
 - **Acesse a API na URL**: `http://localhost:8000`
+
+
+
 
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
