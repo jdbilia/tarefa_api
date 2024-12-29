@@ -7,6 +7,88 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Documentação da API de Tarefas
+
+Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel. A API permite que você crie, leia, atualize e delete tarefas.
+
+## Endpoints
+
+### 1. **Listar todas as tarefas**
+
+- **Rota**: `GET /tarefas`
+- **Descrição**: Retorna uma lista de todas as tarefas armazenadas.
+
+### 2. **Criar uma nova tarefa**
+
+- **Rota**: `POST /tarefas`
+- **Descrição**: Cria uma nova tarefa.
+- **Campos obrigatórios**:
+
+- **nome**: Nome da tarefa (string).
+- **descricao**: Descrição da tarefa (string).
+- **status**: Status da tarefa, como "pendente" ou "completo" (string).
+
+3. Atualizar uma tarefa existente
+Rota: POST /tarefas/{id}
+
+Descrição: Atualiza as informações de uma tarefa existente.
+
+Parâmetros:
+
+id: O ID da tarefa que você deseja atualizar.
+Campos obrigatórios:
+nome: Nome da tarefa (string).
+descricao: Descrição da tarefa (string).
+status: Novo status da tarefa (string).
+
+4. Excluir uma tarefa
+Rota: DELETE /tarefas/{id}
+
+Descrição: Exclui uma tarefa existente.
+
+Parâmetros:
+
+id: O ID da tarefa a ser excluída.
+
+
+Como rodar o projeto
+Clone o repositório:
+
+bash
+Copiar código
+git clone https://github.com/seuusuario/seu-repositorio.git
+Entre na pasta do projeto:
+
+bash
+Copiar código
+cd seu-repositorio
+Instale as dependências do Laravel:
+
+bash
+Copiar código
+composer install
+Crie o arquivo .env a partir do .env.example:
+
+bash
+Copiar código
+cp .env.example .env
+Gere a chave de aplicação do Laravel:
+
+bash
+Copiar código
+php artisan key:generate
+Rode as migrações para criar o banco de dados:
+
+bash
+Copiar código
+php artisan migrate
+Inicie o servidor local:
+
+bash
+Copiar código
+php artisan serve
+Acesse a API na URL: http://localhost:8000
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
