@@ -24,9 +24,9 @@ Esta é a documentação para a API RESTful de tarefas desenvolvida com Laravel.
 - **Descrição**: Cria uma nova tarefa.
 - **Campos obrigatórios**:
 
-- **nome**: Nome da tarefa (string).
-- **descricao**: Descrição da tarefa (string).
-- **status**: Status da tarefa, como "pendente" ou "completo" (string).
+    - **nome**: Nome da tarefa (string).
+    - **descricao**: Descrição da tarefa (string).
+    - **status**: Status da tarefa, como "pendente" ou "completo" (string).
 
 3. Atualizar uma tarefa existente
 Rota: POST /tarefas/{id}
